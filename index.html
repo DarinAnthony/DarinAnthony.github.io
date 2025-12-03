@@ -2,60 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Darin Djapri | Embodied AI & Robot Learning</title>
+  <title>Darin Djapri | About</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
-    content="Darin Djapri - Embodied AI & Robot Learning, UC San Diego"
+    content="About Darin Djapri - Embodied AI & Robot Learning"
   />
   <style>
-    /* Hard reset + force white background even if a theme CSS loads */
+    :root {
+      --accent: #2563eb;
+      --accent-soft: #eff4ff;
+      --text: #111827;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --bg: #f9fafb;
+      --card-bg: #ffffff;
+      --radius: 12px;
+      --max-width: 980px;
+      --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+    }
     * {
       box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    html, body {
-      height: 100%;
     }
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        sans-serif;
-      background: #ffffff !important;
-      color: #111827;
-      line-height: 1.5;
+      margin: 0;
+      padding: 0;
+      font-family: var(--font-main);
+      background: var(--bg);
+      color: var(--text);
     }
     a {
-      color: #2563eb;
+      color: var(--accent);
       text-decoration: none;
     }
     a:hover {
       text-decoration: underline;
     }
-
     .page {
-      max-width: 960px;
+      max-width: var(--max-width);
       margin: 0 auto;
       padding: 24px 16px 48px;
     }
-
-    /* Header / nav */
     header.site-header {
-      padding-bottom: 16px;
-      border-bottom: 1px solid #e5e7eb;
+      padding: 8px 0 16px;
+      border-bottom: 1px solid var(--border);
       margin-bottom: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
     }
     .site-title {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       font-weight: 700;
     }
     .site-subtitle {
       font-size: 0.95rem;
-      color: #6b7280;
+      color: var(--muted);
       margin-top: 4px;
     }
     nav {
-      margin-top: 10px;
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
@@ -66,69 +74,56 @@
       border-bottom: 2px solid transparent;
     }
     nav a:hover {
-      border-bottom-color: #2563eb;
+      border-bottom-color: var(--accent);
       text-decoration: none;
     }
     .section-intro {
       margin: 0 0 12px;
       font-size: 0.95rem;
       color: var(--muted);
-      max-width: 720px;
+      max-width: 760px;
     }
-
-    /* Layout */
-    section {
-      margin-bottom: 28px;
-    }
-    .section-title {
-      font-size: 0.9rem;
-      text-transform: uppercase;
-      letter-spacing: 0.18em;
-      color: #6b7280;
-      margin-bottom: 10px;
-    }
-    .section-title span {
-      color: #2563eb;
-    }
-
     .hero {
-      margin-top: 18px;
-      margin-bottom: 24px;
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+      gap: 24px;
+      margin-bottom: 32px;
+      margin-top: 12px;
     }
-    .hero h1 {
-      font-size: 1.6rem;
-      margin-bottom: 6px;
+    .hero-main h1 {
+      font-size: 2rem;
+      margin: 0 0 8px;
     }
-    .hero p {
-      font-size: 0.98rem;
-      color: #4b5563;
-      margin-bottom: 10px;
+    .hero-main p {
+      margin: 0 0 14px;
+      font-size: 1rem;
+      color: var(--muted);
     }
     .hero-meta {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
-      margin-bottom: 12px;
+      margin: 8px 0 14px;
     }
     .pill {
       padding: 4px 10px;
       border-radius: 999px;
       font-size: 0.85rem;
-      background: #eff6ff;
+      background: var(--accent-soft);
+      color: var(--text);
       border: 1px solid #dbeafe;
-      color: #111827;
     }
     .hero-buttons {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
     .btn {
       border-radius: 999px;
       padding: 7px 14px;
       font-size: 0.9rem;
-      border: 1px solid #e5e7eb;
+      border: 1px solid var(--border);
       background: #ffffff;
       cursor: pointer;
       display: inline-flex;
@@ -136,16 +131,16 @@
       gap: 6px;
     }
     .btn-primary {
-      background: #2563eb;
+      background: var(--accent);
       color: #ffffff;
-      border-color: #2563eb;
+      border-color: var(--accent);
     }
     .btn:hover {
       filter: brightness(1.03);
       text-decoration: none;
     }
     .hero-note {
-      font-size: 0.85rem;
+      font-size: 0.9rem;
       color: var(--muted);
     }
     .hero-links {
@@ -173,131 +168,107 @@
       text-decoration: none;
       border-color: #cbd5e1;
     }
-    .hero-card {
+    .hero-visual {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .portrait {
+      width: 240px;
+      height: 240px;
+      border-radius: 18px;
+      border: 1px solid var(--border);
+      background: linear-gradient(135deg, #e0e7ff, #eff6ff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #475569;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    .section-title {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+    .section-title span {
+      color: var(--accent);
+    }
+    .card {
       background: var(--card-bg);
       border-radius: var(--radius);
       border: 1px solid var(--border);
-      padding: 14px 14px 12px;
-      font-size: 0.9rem;
-    }
-    .hero-card-title {
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--muted);
-      margin-bottom: 6px;
-    }
-    .hero-card-chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-top: 8px;
-    }
-    .chip {
-      padding: 3px 8px;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      font-size: 0.8rem;
-      color: var(--muted);
-      background: #f3f4f6;
-    }
-
-    /* Simple cards */
-    .card {
-      border-radius: 10px;
-      border: 1px solid #e5e7eb;
-      background: #ffffff;
       padding: 14px 16px 12px;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
     .card-header {
       display: flex;
       justify-content: space-between;
       gap: 10px;
       align-items: baseline;
-      margin-bottom: 4px;
+      margin-bottom: 6px;
     }
     .card-title {
       font-weight: 600;
-      font-size: 0.98rem;
-    }
-    .card-subtitle {
-      font-size: 0.85rem;
-      color: #6b7280;
+      font-size: 1rem;
     }
     .card-meta {
-      font-size: 0.8rem;
-      color: #6b7280;
-      margin-bottom: 4px;
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 6px;
     }
     .card-body {
-      font-size: 0.92rem;
+      font-size: 0.95rem;
     }
     .card-body ul {
       margin: 6px 0 0;
       padding-left: 20px;
     }
     .card-body li {
-      margin-bottom: 3px;
+      margin-bottom: 4px;
     }
-
-    .two-col {
+    .three-col {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-      gap: 16px;
-    }
-
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-top: 6px;
-      font-size: 0.8rem;
-    }
-    .tag {
-      padding: 3px 8px;
-      border-radius: 999px;
-      border: 1px solid #e5e7eb;
-      background: #f3f4f6;
-      color: #6b7280;
-    }
-    .writing-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 12px;
     }
-    .badge {
-      padding: 3px 8px;
-      border-radius: 999px;
-      font-size: 0.75rem;
-      background: #ecfeff;
-      color: #0f172a;
-      border: 1px solid #bae6fd;
-      white-space: nowrap;
-    }
-    .link-row {
+    .thumb {
+      width: 100%;
+      max-width: 420px;
+      aspect-ratio: 3 / 2;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: linear-gradient(135deg, #e2e8f0, #f8fafc);
       display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
       align-items: center;
-      margin-top: 12px;
+      justify-content: center;
+      color: #475569;
+      font-weight: 600;
+      margin-bottom: 10px;
     }
-
     footer {
       margin-top: 24px;
       padding-top: 12px;
-      border-top: 1px solid #e5e7eb;
+      border-top: 1px solid var(--border);
       font-size: 0.8rem;
-      color: #6b7280;
+      color: var(--muted);
       display: flex;
       justify-content: space-between;
       gap: 8px;
       flex-wrap: wrap;
     }
-
     @media (max-width: 768px) {
-      .two-col {
+      .hero {
         grid-template-columns: minmax(0, 1fr);
+      }
+      header.site-header {
+        flex-direction: column;
+        align-items: flex-start;
       }
     }
   </style>
@@ -305,380 +276,132 @@
 <body>
   <div class="page">
     <header class="site-header">
-      <div class="site-title">Darin Djapri</div>
-      <div class="site-subtitle">
-        UC San Diego · B.S. Computer Science (Expected June 2026) · GPA 3.957
+      <div>
+        <div class="site-title">Darin Djapri</div>
+        <div class="site-subtitle">Embodied AI &amp; Robot Learning</div>
       </div>
       <nav>
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#projects">Projects</a>
-        <a href="#writing">Writing</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="writing.html">Writing</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </header>
 
     <section class="hero" id="about">
       <div class="hero-main">
-        <h1>Embodied AI &amp; Robot Learning</h1>
+        <p class="card-meta" style="margin: 0 0 6px;">About</p>
+        <h1>Learning systems for dexterous manipulation and humanoids</h1>
         <p>
-          I build learning systems for dexterous manipulation and humanoid control, with a focus on
-          cross-embodied generalization and sim-to-real deployment.
+          I work on morphology-aware, cross-embodied policies and sim-to-real pipelines for dexterous hands and
+          humanoid control. I like building the full stack: simulation, learning, and deployment on hardware.
         </p>
         <div class="hero-meta">
-          <span class="pill">Embodied AI · Robot Learning</span>
-          <span class="pill">Dexterous Manipulation</span>
+          <span class="pill">Embodied AI</span>
+          <span class="pill">Robot Learning</span>
           <span class="pill">Sim-to-Real</span>
         </div>
         <div class="hero-buttons">
-          <!-- TODO: replace # with a real CV link once you upload a PDF to the repo -->
           <a class="btn btn-primary" href="#" target="_blank" rel="noopener">Download CV</a>
-          <a
-            class="btn"
-            href="https://github.com/DarinAnthony"
-            target="_blank"
-            rel="noopener"
-            >GitHub</a
-          >
+          <a class="btn" href="mailto:ddjapri@ucsd.edu">Email</a>
+          <a class="btn" href="https://github.com/DarinAnthony" target="_blank" rel="noopener">GitHub</a>
         </div>
         <div class="hero-note">
-          Current interests: cross-embodied policies, morphology-conditioned control, VLA-style models, and
-          data-efficient learning from simulated, real, and video data.
+          Currently: undergraduate researcher in Hao Su Lab and Bioinspired Robotics &amp; Design Lab working on
+          cross-embodied co-design for dexterous hands and humanoid locomotion.
         </div>
         <div class="hero-links">
-          <a class="link-chip" href="#research">Research <span>active</span></a>
-          <a class="link-chip" href="#projects">Projects <span>selected</span></a>
-          <a class="link-chip" href="#writing">Writing <span>notes</span></a>
-          <a class="link-chip" href="#contact">Contact <span>email</span></a>
+          <a class="link-chip" href="research.html">Research <span>papers &amp; lab work</span></a>
+          <a class="link-chip" href="projects.html">Projects <span>hands-on builds</span></a>
+          <a class="link-chip" href="writing.html">Writing <span>notes &amp; drafts</span></a>
+          <a class="link-chip" href="contact.html">Contact <span>email</span></a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="portrait">Portrait Placeholder</div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title"><span>At</span> a Glance</h2>
+      <div class="three-col">
+        <div class="card">
+          <div class="thumb">Research Image</div>
+          <div class="card-header">
+            <div class="card-title">Research</div>
+          </div>
+          <div class="card-body">
+            Cross-embodied policies, morphology-conditioned control, and sim-to-real checklists for dexterous
+            hands and humanoids.
+          </div>
+          <a class="btn" href="research.html" style="margin-top: 10px;">View research</a>
+        </div>
+        <div class="card">
+          <div class="thumb">Projects Image</div>
+          <div class="card-header">
+            <div class="card-title">Projects</div>
+          </div>
+          <div class="card-body">
+            Hands-on builds: UCSD's scratch-built humanoid, a 6-DoF arm with imitation learning, and classic RL
+            reproductions.
+          </div>
+          <a class="btn" href="projects.html" style="margin-top: 10px;">See projects</a>
+        </div>
+        <div class="card">
+          <div class="thumb">Writing Image</div>
+          <div class="card-header">
+            <div class="card-title">Writing &amp; Notes</div>
+          </div>
+          <div class="card-body">
+            Working notes on deployment, morphology conditioning, and teaching materials I update alongside new
+            experiments.
+          </div>
+          <a class="btn" href="writing.html" style="margin-top: 10px;">Open writing page</a>
         </div>
       </div>
     </section>
 
-    <section id="research">
-      <h2 class="section-title"><span>Research</span> Focus</h2>
-      <p class="section-intro">
-        Building learning systems for dexterous manipulation and humanoid control, with an emphasis on
-        morphology-aware policies, cross-embodied transfer, and sim-to-real deployment.
-      </p>
-
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">Research Interests</div>
-        </div>
-        <div class="card-body">
-          <ul>
-            <li>Embodied AI and robot learning for dexterous manipulation and locomotion.</li>
-            <li>Cross-embodied generalization across tasks, environments, and morphologies.</li>
-            <li>VLA-style models combining simulated, real, and video data for control.</li>
-            <li>Data-efficient sim-to-real pipelines and morphology-conditioned policies.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">Cross-Embodied Co-Design for Dexterous Hands</div>
-          <div class="card-subtitle">ICLR 2026 (under review)</div>
-        </div>
-        <div class="card-meta">
-          Fay, K., Djapri, D. A., Zorin, A., Yi, S., Clinton, J., El Lahib, A., Tolley, M. T.,
-          Su, H., &amp; Wang, X.
-        </div>
-        <div class="card-body">
-          <p>
-            Co-design framework that jointly optimizes robot hand morphology and control policies, using a
-            single cross-embodied policy to evaluate thousands of hand designs for in-hand rotation, grasping,
-            and flipping.
-          </p>
-          <div class="tags">
-            <!-- TODO: replace # with arXiv/OpenReview link -->
-            <a class="tag" href="#" target="_blank" rel="noopener">Preprint (arXiv)</a>
-            <span class="tag">Cross-Embodied RL</span>
-            <span class="tag">Graph Heuristic Search</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="two-col">
-        <div class="card">
-          <div class="card-header">
-            <div class="card-title">Hao Su Lab</div>
-            <div class="card-subtitle">Undergraduate Researcher · Jun 2025 – Present</div>
-          </div>
-          <div class="card-meta">UC San Diego · Cross-embodied co-design for dexterous hands</div>
-          <div class="card-body">
-            <ul>
-              <li>Parametric hand generator and simulation pipeline for 10,000+ hand designs.</li>
-              <li>
-                Morphology-conditioned PPO with RNN backbone, action masking, and adaptive domain randomization.
-              </li>
-              <li>
-                Graph heuristic search + GNN value function for ranking partial and complete designs, achieving
-                ~400× faster evaluation than per-morphology training.
-              </li>
-              <li>Sim-to-real deployment: motor tuning, gains, and Python control mapping.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header">
-            <div class="card-title">Rose Lab (ERSP)</div>
-            <div class="card-subtitle">Undergraduate Researcher · Sep 2024 – Jun 2025</div>
-          </div>
-          <div class="card-meta">Surrogate modeling &amp; Bayesian Active Learning</div>
-          <div class="card-body">
-            <ul>
-              <li>
-                Extended TGLF-NN in PyTorch to approximate nonlinear plasma turbulence models with test MSE ≈
-                0.03 on ~670k simulations.
-              </li>
-              <li>
-                Designed a BAL framework with Expected Information Gain matching full-data accuracy using ~35%
-                of the data.
-              </li>
-              <li>
-                Deployed experiments on Nautilus with Docker, Kubernetes, W&amp;B logging, and S3 storage.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects">
-      <h2 class="section-title"><span>Selected</span> Projects</h2>
-      <p class="section-intro">
-        Applying research ideas to hands-on builds—from humanoids and robotic arms to classical RL benchmarks.
-        Each project below includes deployment or reproducibility notes where applicable.
-      </p>
-
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">Triton Humanoid</div>
-          <div class="card-subtitle">Jul 2025 – Present</div>
-        </div>
-        <div class="card-meta">
-          UCSD’s first scratch-built humanoid · Disturbance-rejection &amp; locomotion with PPO
-        </div>
-        <div class="card-body">
-          <ul>
-            <li>
-              Modeled a custom humanoid from mechanical CAD into a physics simulator with realistic inertias,
-              joint limits, and contacts.
-            </li>
-            <li>
-              Designed RL environments and trained locomotion policies with adaptive domain randomization and
-              privileged observations.
-            </li>
-            <li>
-              Distilled a privileged teacher into a student policy using only onboard sensing for deployment.
-            </li>
-            <li>
-              Integrated JIT-compiled PyTorch policies into a ROS2 control stack with sensor and motor nodes.
-            </li>
-          </ul>
-          <div class="tags">
-            <a class="tag" href="#" target="_blank" rel="noopener">Code / Details</a>
-            <span class="tag">Humanoid Locomotion</span>
-            <span class="tag">PPO</span>
-            <span class="tag">ROS 2</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">Robotic Arm Manipulation (ARCTOS)</div>
-          <div class="card-subtitle">Mar 2025 – May 2025</div>
-        </div>
-        <div class="card-meta">6-DoF arm · Imitation learning on top of IK</div>
-        <div class="card-body">
-          <ul>
-            <li>3D-printed and assembled a 6-DoF ARCTOS arm and modeled it in MuJoCo (MJCF).</li>
-            <li>
-              Implemented an IK controller and scripted expert to generate cube-grasp trajectories as demos.
-            </li>
-            <li>
-              Built an imitation-learning pipeline (BC + DAgger) that outputs end-effector deltas and transferred
-              it to the real arm with safety constraints.
-            </li>
-          </ul>
-          <div class="tags">
-            <a class="tag" href="#" target="_blank" rel="noopener">Code</a>
-            <span class="tag">Imitation Learning</span>
-            <span class="tag">MuJoCo</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">DQN 2015 Reimplementation</div>
-          <div class="card-subtitle">Mar 2025</div>
-        </div>
-        <div class="card-meta">Atari environments · Human-level performance on Breakout &amp; Carnival</div>
-        <div class="card-body">
-          <ul>
-            <li>Implemented DQN with a convolutional Q-network for high-dimensional visual inputs.</li>
-            <li>
-              Added preprocessing (frame stacking, flicker removal, grayscale) to stabilize training and improve
-              approximation.
-            </li>
-            <li>
-              Built a replay buffer with GPU-aware memory and tuned training to reach human-level scores.
-            </li>
-          </ul>
-          <div class="tags">
-            <a class="tag" href="#" target="_blank" rel="noopener">Code</a>
-            <span class="tag">Deep RL</span>
-            <span class="tag">Atari</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="writing">
-      <h2 class="section-title"><span>Writing</span> &amp; Notes</h2>
-      <p class="section-intro">
-        Short, working notes on embodied AI experiments, sim-to-real checklists, and teaching materials. The
-        full archive lives on a separate writing page.
-      </p>
-      <div class="writing-grid">
-        <div class="card">
-          <div class="card-header">
-            <div class="card-title">Sim-to-Real Checklists for Dexterous Control</div>
-            <div class="badge">Draft</div>
-          </div>
-          <div class="card-body">
-            <p>
-              Lessons from deploying morphology-conditioned policies on hardware: calibration, domain
-              randomization settings, motor safety, and failure cases to watch.
-            </p>
-            <div class="tags">
-              <span class="tag">Sim-to-Real</span>
-              <span class="tag">Dexterous Hands</span>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            <div class="card-title">Cross-Embodied Policy Sketches</div>
-            <div class="badge">Notes</div>
-          </div>
-          <div class="card-body">
-            <p>
-              Quick notes on conditioning policies on morphology descriptors and what ablations moved the needle
-              for hand and humanoid experiments.
-            </p>
-            <div class="tags">
-              <span class="tag">Embodied AI</span>
-              <span class="tag">Policy Design</span>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            <div class="card-title">Teaching: RL Mini-Workshop Outline</div>
-            <div class="badge">In Prep</div>
-          </div>
-          <div class="card-body">
-            <p>
-              Slide outline and exercises for introducing policy gradients and PPO to new team members building
-              robots at UCSD.
-            </p>
-            <div class="tags">
-              <span class="tag">Teaching</span>
-              <span class="tag">Reinforcement Learning</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="link-row">
-        <a class="btn btn-primary" href="writing.html">Open writing page</a>
-        <a class="btn" href="mailto:ddjapri@ucsd.edu">Request a topic</a>
-      </div>
-    </section>
-
-    <section id="teaching">
+    <section>
       <h2 class="section-title"><span>Teaching</span> &amp; Leadership</h2>
       <p class="section-intro">
-        Sharing robotics and RL with students and peers through leadership, workshops, and one-on-one teaching.
+        Sharing robotics and RL with students and peers through leadership, workshops, and mentoring.
       </p>
-
-      <div class="two-col">
-        <div class="card">
-          <div class="card-header">
-            <div class="card-title">Triton Droids</div>
-            <div class="card-subtitle">Vice President of Engineering · Sep 2024 – Present</div>
-          </div>
-          <div class="card-meta">60+ member student robotics team (humanoid + quadruped)</div>
-          <div class="card-body">
-            <ul>
-              <li>
-                Lead engineering for UCSD’s first humanoid and a quadruped prototype, coordinating mechanical,
-                electrical, and software teams.
-              </li>
-              <li>Secured $5,000+ in sponsorship for hardware, machining, and electronics.</li>
-              <li>
-                Designed RL workshops (MDPs, policy gradients, deep RL) and mentored ~15 students building Triton
-                Pupper with learned policies.
-              </li>
-            </ul>
-          </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">Triton Droids</div>
+          <div class="card-meta">Vice President of Engineering · Sep 2024 – Present</div>
         </div>
-
-        <div class="card">
-          <div class="card-header">
-            <div class="card-title">Teaching &amp; Tutoring</div>
-          </div>
-          <div class="card-body">
-            <p class="card-meta"><strong>AYC Logic</strong> · Coding Tutor · Jun 2023 – Present</p>
-            <ul>
-              <li>
-                Taught Python and Java to students aged 7–50, from basic programming to PyGame, USACO, and ML
-                fundamentals.
-              </li>
-              <li>
-                Supervised projects (CLI tools, games, Android apps) and emphasized version control and clean code.
-              </li>
-            </ul>
-            <p class="card-meta" style="margin-top: 8px;">
-              <strong>De Anza Student Success Center</strong> · Math/Physics Tutor · Sep 2023 – Jul 2024
-            </p>
-            <ul>
-              <li>
-                Tutored Calculus, Differential Equations, Discrete Math, Linear Algebra, and Physics, helping
-                students move from C to A-level performance.
-              </li>
-              <li>Focused on clear, stepwise explanations for nontraditional and working students.</li>
-            </ul>
-          </div>
+        <div class="card-body">
+          <ul>
+            <li>Lead engineering for UCSD's humanoid and quadruped teams; coordinate mechanical, electrical, and software efforts.</li>
+            <li>Ran RL workshops (MDPs, policy gradients) and mentored students building Triton Pupper with learned policies.</li>
+            <li>Secured hardware sponsorships and organized build/test pipelines.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">Teaching &amp; Tutoring</div>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li>Coding tutor at AYC Logic (Python/Java, PyGame, USACO, ML fundamentals).</li>
+            <li>Math/Physics tutor at De Anza Student Success Center; focus on clear, stepwise explanations.</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section id="contact">
+    <section>
       <h2 class="section-title"><span>Contact</span></h2>
       <div class="card">
         <div class="card-body">
-          <p>
-            The best way to reach me is by email. I’m happy to talk about research, collaborations, or opportunities
-            related to embodied AI, dexterous manipulation, and robot learning.
-          </p>
-          <ul>
-            <li>Email: <a href="mailto:ddjapri@ucsd.edu">ddjapri@ucsd.edu</a></li>
-            <li>
-              GitHub:
-              <a
-                href="https://github.com/DarinAnthony"
-                target="_blank"
-                rel="noopener"
-                >github.com/DarinAnthony</a
-              >
-            </li>
-          </ul>
+          Prefer email for research collaborations, robotics projects, and teaching invites.
+          <div class="hero-links" style="margin-top: 12px;">
+            <a class="link-chip" href="contact.html">Contact page <span>details</span></a>
+            <a class="link-chip" href="mailto:ddjapri@ucsd.edu">Email <span>ddjapri@ucsd.edu</span></a>
+          </div>
         </div>
       </div>
     </section>

@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Writing | Darin Djapri</title>
+  <title>Research | Darin Djapri</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
-    content="Writing and notes by Darin Djapri on embodied AI, robot learning, and teaching."
+    content="Research by Darin Djapri: embodied AI, dexterous manipulation, cross-embodied control, sim-to-real."
   />
   <style>
     :root {
@@ -18,7 +18,7 @@
       --bg: #f9fafb;
       --card-bg: #ffffff;
       --radius: 12px;
-      --max-width: 900px;
+      --max-width: 980px;
       --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
         sans-serif;
     }
@@ -45,9 +45,9 @@
       padding: 24px 16px 48px;
     }
     header.site-header {
-      padding: 8px 0 12px;
+      padding: 8px 0 16px;
       border-bottom: 1px solid var(--border);
-      margin-bottom: 20px;
+      margin-bottom: 24px;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
@@ -55,7 +55,7 @@
       gap: 10px;
     }
     .site-title {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       font-weight: 700;
     }
     .site-subtitle {
@@ -78,20 +78,20 @@
       text-decoration: none;
     }
     .section-title {
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       text-transform: uppercase;
       letter-spacing: 0.18em;
       color: var(--muted);
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
     .section-title span {
       color: var(--accent);
     }
     .section-intro {
       margin: 0 0 14px;
-      font-size: 0.98rem;
+      font-size: 0.95rem;
       color: var(--muted);
-      max-width: 720px;
+      max-width: 760px;
     }
     .card {
       background: var(--card-bg);
@@ -118,10 +118,17 @@
     .card-meta {
       font-size: 0.8rem;
       color: var(--muted);
-      margin-bottom: 4px;
+      margin-bottom: 6px;
     }
     .card-body {
       font-size: 0.95rem;
+    }
+    .card-body ul {
+      margin: 6px 0 0;
+      padding-left: 20px;
+    }
+    .card-body li {
+      margin-bottom: 4px;
     }
     .tags {
       display: flex;
@@ -137,44 +144,9 @@
       background: #f3f4f6;
       color: var(--muted);
     }
-    .badge {
-      padding: 3px 8px;
-      border-radius: 999px;
-      font-size: 0.75rem;
-      background: #ecfeff;
-      color: #0f172a;
-      border: 1px solid #bae6fd;
-      white-space: nowrap;
-    }
-    .btn {
-      border-radius: 10px;
-      padding: 7px 14px;
-      font-size: 0.9rem;
-      border: 1px solid var(--border);
-      background: #ffffff;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .btn-primary {
-      background: var(--accent);
-      color: #ffffff;
-      border-color: var(--accent);
-    }
-    .btn:hover {
-      filter: brightness(1.03);
-      text-decoration: none;
-    }
-    .link-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      align-items: center;
-      margin: 12px 0 16px;
-    }
     .thumb {
       width: 100%;
+      max-width: 460px;
       aspect-ratio: 16 / 9;
       border-radius: 10px;
       border: 1px solid var(--border);
@@ -202,8 +174,10 @@
 <body>
   <div class="page">
     <header class="site-header">
-      <div class="site-title">Darin Djapri</div>
-      <div class="site-subtitle">Writing &amp; notes on embodied AI and robotics</div>
+      <div>
+        <div class="site-title">Darin Djapri</div>
+        <div class="site-subtitle">Research</div>
+      </div>
       <nav>
         <a href="index.html">About</a>
         <a href="research.html">Research</a>
@@ -214,89 +188,82 @@
     </header>
 
     <section>
-      <h1 style="margin: 0 0 6px; font-size: 1.8rem;">Writing &amp; Notes</h1>
+      <h1 style="margin: 0 0 6px; font-size: 1.8rem;">Research</h1>
       <p class="section-intro">
-        Longer-form notes, checklists, and drafts. These are working documents; I update them as I learn from new
-        experiments, deployments, or teaching sessions.
+        Embodied AI and robot learning with a focus on morphology-conditioned policies, cross-embodied transfer,
+        and sim-to-real deployment for dexterous manipulation and humanoid control.
       </p>
-      <div class="link-row">
-        <a class="btn btn-primary" href="index.html">Back to home</a>
-        <a class="btn" href="mailto:ddjapri@ucsd.edu">Suggest a topic</a>
-      </div>
     </section>
 
     <section>
-      <h2 class="section-title"><span>Lab</span> Notes</h2>
+      <h2 class="section-title"><span>Papers</span> &amp; Preprints</h2>
       <div class="card">
         <div class="thumb">Placeholder Image</div>
         <div class="card-header">
-          <div class="card-title">Sim-to-Real Checklists for Dexterous Control</div>
-          <div class="badge">Draft</div>
+          <div class="card-title">Cross-Embodied Co-Design for Dexterous Hands</div>
+          <div class="card-subtitle">ICLR 2026 (under review)</div>
         </div>
-        <div class="card-meta">Updated 2025 · Hardware bring-up and deployment notes</div>
+        <div class="card-meta">
+          Fay, K., Djapri, D. A., Zorin, A., Yi, S., Clinton, J., El Lahib, A., Tolley, M. T., Su, H., &amp; Wang, X.
+        </div>
         <div class="card-body">
-          Practical checklists for calibration, sensing, domain randomization, motor safety, and evaluation
-          protocols when transferring morphology-conditioned policies to real hands.
+          Co-design framework jointly optimizing hand morphology and control policies using a single cross-embodied
+          policy to evaluate thousands of designs for in-hand rotation, grasping, and flipping.
         </div>
         <div class="tags">
-          <span class="tag">Sim-to-Real</span>
-          <span class="tag">Dexterous Hands</span>
-          <span class="tag">Checklists</span>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="thumb">Placeholder Image</div>
-        <div class="card-header">
-          <div class="card-title">Cross-Embodied Policy Sketches</div>
-          <div class="badge">Notes</div>
-        </div>
-        <div class="card-meta">Updated 2025 · Morphology-aware learning</div>
-        <div class="card-body">
-          Quick experiments on embedding morphology descriptors, conditioning strategies, and ablations that
-          influenced transfer for dexterous hands and humanoid locomotion.
-        </div>
-        <div class="tags">
-          <span class="tag">Embodied AI</span>
-          <span class="tag">Policy Design</span>
-          <span class="tag">Ablations</span>
+          <a class="tag" href="#" target="_blank" rel="noopener">Preprint (arXiv)</a>
+          <span class="tag">Cross-Embodied RL</span>
+          <span class="tag">Graph Heuristic Search</span>
         </div>
       </div>
     </section>
 
     <section>
-      <h2 class="section-title"><span>Teaching</span> &amp; Outreach</h2>
+      <h2 class="section-title"><span>Lab</span> Work</h2>
       <div class="card">
         <div class="thumb">Placeholder Image</div>
         <div class="card-header">
-          <div class="card-title">RL Mini-Workshop Outline</div>
-          <div class="badge">In Prep</div>
+          <div class="card-title">Hao Su Lab</div>
+          <div class="card-subtitle">Undergraduate Researcher · Jun 2025 – Present</div>
         </div>
-        <div class="card-meta">Slides + exercises · For robotics club onboarding</div>
+        <div class="card-meta">Cross-embodied co-design for dexterous hands</div>
         <div class="card-body">
-          Session plan covering MDPs, policy gradients, PPO intuition, and a lightweight hands-on lab using a
-          toy environment. Includes pointers for hardware-minded audiences.
-        </div>
-        <div class="tags">
-          <span class="tag">Teaching</span>
-          <span class="tag">Reinforcement Learning</span>
-          <span class="tag">Workshops</span>
+          <ul>
+            <li>Built a parametric hand generator and simulation pipeline for 10,000+ hand designs.</li>
+            <li>Morphology-conditioned PPO with RNN backbone, action masking, and adaptive domain randomization.</li>
+            <li>Graph heuristic search + GNN value function to rank partial/complete designs (~400× faster than per-morph training).</li>
+            <li>Sim-to-real deployment: motor tuning, gains, and Python control mapping.</li>
+          </ul>
         </div>
       </div>
+
       <div class="card">
         <div class="thumb">Placeholder Image</div>
         <div class="card-header">
-          <div class="card-title">Mentorship Notes</div>
-          <div class="badge">Draft</div>
+          <div class="card-title">Rose Lab (ERSP)</div>
+          <div class="card-subtitle">Undergraduate Researcher · Sep 2024 – Jun 2025</div>
         </div>
-        <div class="card-meta">Guides for student projects</div>
+        <div class="card-meta">Surrogate modeling &amp; Bayesian Active Learning</div>
         <div class="card-body">
-          Checklists I share with students: setting up repos, writing small reproducible experiments, and
-          common pitfalls when jumping into robotics codebases.
+          <ul>
+            <li>Extended TGLF-NN in PyTorch to approximate nonlinear plasma turbulence models with test MSE ≈ 0.03 on ~670k simulations.</li>
+            <li>Designed a BAL framework with Expected Information Gain matching full-data accuracy using ~35% of the data.</li>
+            <li>Deployed experiments on Nautilus with Docker, Kubernetes, W&amp;B logging, and S3 storage.</li>
+          </ul>
         </div>
-        <div class="tags">
-          <span class="tag">Mentorship</span>
-          <span class="tag">Project Setup</span>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title"><span>Interests</span></h2>
+      <div class="card">
+        <div class="card-body">
+          <ul>
+            <li>Embodied AI and robot learning for dexterous manipulation and locomotion.</li>
+            <li>Cross-embodied generalization across tasks, environments, and morphologies.</li>
+            <li>VLA-style models combining simulated, real, and video data for control.</li>
+            <li>Data-efficient sim-to-real pipelines and morphology-conditioned policies.</li>
+          </ul>
         </div>
       </div>
     </section>
