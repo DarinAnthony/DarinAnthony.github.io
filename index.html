@@ -9,53 +9,49 @@
     content="Darin Djapri - Embodied AI & Robot Learning, UC San Diego"
   />
   <style>
-    :root {
-      --accent: #2563eb;
-      --accent-soft: #eff4ff;
-      --text: #111827;
-      --muted: #6b7280;
-      --border: #e5e7eb;
-      --bg: #f9fafb;
-      --card-bg: #ffffff;
-      --radius: 12px;
-      --max-width: 900px;
-      --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        sans-serif;
-    }
+    /* Hard reset + force white background even if a theme CSS loads */
     * {
       box-sizing: border-box;
-    }
-    body {
       margin: 0;
       padding: 0;
-      font-family: var(--font-main);
-      background: var(--bg);
-      color: var(--text);
+    }
+    html, body {
+      height: 100%;
+    }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      background: #ffffff !important;
+      color: #111827;
+      line-height: 1.5;
     }
     a {
-      color: var(--accent);
+      color: #2563eb;
       text-decoration: none;
     }
     a:hover {
       text-decoration: underline;
     }
+
     .page {
-      max-width: var(--max-width);
+      max-width: 960px;
       margin: 0 auto;
       padding: 24px 16px 48px;
     }
+
+    /* Header / nav */
     header.site-header {
-      padding: 8px 0 16px;
-      border-bottom: 1px solid var(--border);
+      padding-bottom: 16px;
+      border-bottom: 1px solid #e5e7eb;
       margin-bottom: 24px;
     }
     .site-title {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       font-weight: 700;
     }
     .site-subtitle {
       font-size: 0.95rem;
-      color: var(--muted);
+      color: #6b7280;
       margin-top: 4px;
     }
     nav {
@@ -70,25 +66,37 @@
       border-bottom: 2px solid transparent;
     }
     nav a:hover {
-      border-bottom-color: var(--accent);
+      border-bottom-color: #2563eb;
       text-decoration: none;
     }
 
-    .hero {
-      display: grid;
-      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
-      gap: 20px;
+    /* Layout */
+    section {
       margin-bottom: 28px;
+    }
+    .section-title {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: #6b7280;
+      margin-bottom: 10px;
+    }
+    .section-title span {
+      color: #2563eb;
+    }
+
+    .hero {
       margin-top: 18px;
+      margin-bottom: 24px;
     }
-    .hero-main h1 {
-      font-size: 2rem;
-      margin: 0 0 8px;
+    .hero h1 {
+      font-size: 1.6rem;
+      margin-bottom: 6px;
     }
-    .hero-main p {
-      margin: 0 0 12px;
+    .hero p {
       font-size: 0.98rem;
-      color: var(--muted);
+      color: #4b5563;
+      margin-bottom: 10px;
     }
     .hero-meta {
       display: flex;
@@ -100,9 +108,9 @@
       padding: 4px 10px;
       border-radius: 999px;
       font-size: 0.85rem;
-      background: var(--accent-soft);
-      color: var(--text);
+      background: #eff6ff;
       border: 1px solid #dbeafe;
+      color: #111827;
     }
     .hero-buttons {
       display: flex;
@@ -114,7 +122,7 @@
       border-radius: 999px;
       padding: 7px 14px;
       font-size: 0.9rem;
-      border: 1px solid var(--border);
+      border: 1px solid #e5e7eb;
       background: #ffffff;
       cursor: pointer;
       display: inline-flex;
@@ -122,9 +130,9 @@
       gap: 6px;
     }
     .btn-primary {
-      background: var(--accent);
+      background: #2563eb;
       color: #ffffff;
-      border-color: var(--accent);
+      border-color: #2563eb;
     }
     .btn:hover {
       filter: brightness(1.03);
@@ -132,54 +140,15 @@
     }
     .hero-note {
       font-size: 0.85rem;
-      color: var(--muted);
-    }
-    .hero-card {
-      background: var(--card-bg);
-      border-radius: var(--radius);
-      border: 1px solid var(--border);
-      padding: 14px 14px 12px;
-      font-size: 0.9rem;
-    }
-    .hero-card-title {
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--muted);
-      margin-bottom: 6px;
-    }
-    .hero-card-chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-top: 8px;
-    }
-    .chip {
-      padding: 3px 8px;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      font-size: 0.8rem;
-      color: var(--muted);
-      background: #f3f4f6;
+      color: #6b7280;
+      margin-top: 4px;
     }
 
-    section {
-      margin-bottom: 28px;
-    }
-    .section-title {
-      font-size: 0.9rem;
-      text-transform: uppercase;
-      letter-spacing: 0.18em;
-      color: var(--muted);
-      margin-bottom: 10px;
-    }
-    .section-title span {
-      color: var(--accent);
-    }
+    /* Simple cards */
     .card {
-      background: var(--card-bg);
-      border-radius: var(--radius);
-      border: 1px solid var(--border);
+      border-radius: 10px;
+      border: 1px solid #e5e7eb;
+      background: #ffffff;
       padding: 14px 16px 12px;
       margin-bottom: 10px;
     }
@@ -196,11 +165,11 @@
     }
     .card-subtitle {
       font-size: 0.85rem;
-      color: var(--muted);
+      color: #6b7280;
     }
     .card-meta {
       font-size: 0.8rem;
-      color: var(--muted);
+      color: #6b7280;
       margin-bottom: 4px;
     }
     .card-body {
@@ -230,17 +199,17 @@
     .tag {
       padding: 3px 8px;
       border-radius: 999px;
-      border: 1px solid var(--border);
+      border: 1px solid #e5e7eb;
       background: #f3f4f6;
-      color: var(--muted);
+      color: #6b7280;
     }
 
     footer {
       margin-top: 24px;
       padding-top: 12px;
-      border-top: 1px solid var(--border);
+      border-top: 1px solid #e5e7eb;
       font-size: 0.8rem;
-      color: var(--muted);
+      color: #6b7280;
       display: flex;
       justify-content: space-between;
       gap: 8px;
@@ -248,9 +217,6 @@
     }
 
     @media (max-width: 768px) {
-      .hero {
-        grid-template-columns: minmax(0, 1fr);
-      }
       .two-col {
         grid-template-columns: minmax(0, 1fr);
       }
@@ -274,47 +240,31 @@
     </header>
 
     <section class="hero" id="about">
-      <div class="hero-main">
-        <h1>Embodied AI &amp; Robot Learning</h1>
-        <p>
-          I build learning systems for dexterous manipulation and humanoid control, with a focus on
-          cross-embodied generalization and sim-to-real deployment.
-        </p>
-        <div class="hero-meta">
-          <span class="pill">Embodied AI · Robot Learning</span>
-          <span class="pill">Dexterous Manipulation</span>
-          <span class="pill">Sim-to-Real</span>
-        </div>
-        <div class="hero-buttons">
-          <!-- TODO: replace # with a real CV link once you upload a PDF to the repo -->
-          <a class="btn btn-primary" href="#" target="_blank" rel="noopener">Download CV</a>
-          <a
-            class="btn"
-            href="https://github.com/DarinAnthony"
-            target="_blank"
-            rel="noopener"
-            >GitHub</a
-          >
-        </div>
-        <div class="hero-note">
-          Current interests: cross-embodied policies, morphology-conditioned control, VLA-style models, and
-          data-efficient learning from simulated, real, and video data.
-        </div>
+      <h1>Embodied AI &amp; Robot Learning</h1>
+      <p>
+        I build learning systems for dexterous manipulation and humanoid control, with a focus on
+        cross-embodied generalization and sim-to-real deployment.
+      </p>
+      <div class="hero-meta">
+        <span class="pill">Embodied AI · Robot Learning</span>
+        <span class="pill">Dexterous Manipulation</span>
+        <span class="pill">Sim-to-Real</span>
       </div>
-
-      <aside class="hero-card">
-        <div class="hero-card-title">Currently</div>
-        <div>
-          Undergraduate researcher in the <strong>Hao Su Lab</strong> and
-          <strong>Bioinspired Robotics &amp; Design Lab</strong>, working on cross-embodied co-design for
-          dexterous hands and humanoid locomotion.
-        </div>
-        <div class="hero-card-chips">
-          <span class="chip">Cross-Embodied Design</span>
-          <span class="chip">Dexterous Hands</span>
-          <span class="chip">Humanoid Locomotion</span>
-        </div>
-      </aside>
+      <div class="hero-buttons">
+        <!-- TODO: replace # with a real CV link once you upload a PDF to the repo -->
+        <a class="btn btn-primary" href="#" target="_blank" rel="noopener">Download CV</a>
+        <a
+          class="btn"
+          href="https://github.com/DarinAnthony"
+          target="_blank"
+          rel="noopener"
+          >GitHub</a
+        >
+      </div>
+      <div class="hero-note">
+        Current interests: cross-embodied policies, morphology-conditioned control, VLA-style models, and
+        data-efficient learning from simulated, real, and video data.
+      </div>
     </section>
 
     <section id="research">
