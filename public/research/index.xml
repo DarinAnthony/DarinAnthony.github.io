@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Research on Darin Djapri</title>
+    <link>http://localhost:1313/research/</link>
+    <description>Recent content in Research on Darin Djapri</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2026 Darin Djapri</copyright>
+    <lastBuildDate>Sun, 11 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/research/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Bayesian Active Learning for the TGLF-NN</title>
+      <link>http://localhost:1313/research/bayesian-active-learning-tglf-nn/</link>
+      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/research/bayesian-active-learning-tglf-nn/</guid>
+      <description>Active learning loop for data-efficient training on TGLF-NN.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

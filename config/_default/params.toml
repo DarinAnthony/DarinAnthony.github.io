@@ -1,0 +1,29 @@
+colorScheme = "slate"
+
+# Recent content on the homepage is pulled from these sections
+mainSections = ["projects", "research", "writing"]
+
+[homepage]
+layout = "profile"
+showRecent = true
+cardView = true
+cardViewScreenWidth = false
+
+[list]
+cardView = true
+cardViewScreenWidth = false
+
+[article]
+showReadingTime = true
+showDate = true
+showTaxonomies = true
+
+[header]
+layout = "fixed-fill"
+
+[footer]
+showMenu = false
+showCopyright = true
+
+[search]
+enabled = true
