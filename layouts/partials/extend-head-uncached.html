@@ -1,0 +1,9 @@
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var updateHeader = function () {
+      document.body.classList.toggle("has-scrolled", window.scrollY > 8);
+    };
+    updateHeader();
+    window.addEventListener("scroll", updateHeader, { passive: true });
+  });
+</script>

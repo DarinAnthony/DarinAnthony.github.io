@@ -1,0 +1,16 @@
+baseURL = "https://YOUR_DOMAIN_HERE/"
+languageCode = "en"
+defaultContentLanguage = "en"
+title = "Darin Djapri"
+enableRobotsTXT = true
+
+[pagination]
+pagerSize = 12
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+# NOTE:
+# If you install Blowfish via git submodule instead of Hugo Modules,
+# you must set: theme = "blowfish"
+# With Hugo Modules, Blowfish says to REMOVE theme=.

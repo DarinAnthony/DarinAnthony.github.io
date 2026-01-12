@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Darin Djapri</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on Darin Djapri</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2026 Darin Djapri</copyright>
+    <lastBuildDate>Sun, 11 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Active Learning</title>
+      <link>http://localhost:1313/tags/active-learning/</link>
+      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/active-learning/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Autonomy</title>
+      <link>http://localhost:1313/tags/autonomy/</link>
+      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/autonomy/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Bayesian</title>
+      <link>http://localhost:1313/tags/bayesian/</link>
+      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/bayesian/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Computer Vision</title>
+      <link>http://localhost:1313/tags/computer-vision/</link>
+      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/computer-vision/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Control</title>
+      <link>http://localhost:1313/tags/control/</link>
+      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/control/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Deep Learning</title>
+      <link>http://localhost:1313/tags/deep-learning/</link>
+      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/deep-learning/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Dexterous Manipulation</title>
+      <link>http://localhost:1313/tags/dexterous-manipulation/</link>
+      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/dexterous-manipulation/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Hardware</title>
+      <link>http://localhost:1313/tags/hardware/</link>
+      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/hardware/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Locomotion</title>
+      <link>http://localhost:1313/tags/locomotion/</link>
+      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/locomotion/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Manipulation</title>
+      <link>http://localhost:1313/tags/manipulation/</link>
+      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/manipulation/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Neural Networks</title>
+      <link>http://localhost:1313/tags/neural-networks/</link>
+      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/neural-networks/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Perception</title>
+      <link>http://localhost:1313/tags/perception/</link>
+      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/perception/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Pipelines</title>
+      <link>http://localhost:1313/tags/pipelines/</link>
+      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/pipelines/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Planning</title>
+      <link>http://localhost:1313/tags/planning/</link>
+      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/planning/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Reinforcement Learning</title>
+      <link>http://localhost:1313/tags/reinforcement-learning/</link>
+      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/reinforcement-learning/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Robot Learning</title>
+      <link>http://localhost:1313/tags/robot-learning/</link>
+      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/robot-learning/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Robotics</title>
+      <link>http://localhost:1313/tags/robotics/</link>
+      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/robotics/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Sim-to-Real</title>
+      <link>http://localhost:1313/tags/sim-to-real/</link>
+      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/sim-to-real/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Simulation</title>
+      <link>http://localhost:1313/tags/simulation/</link>
+      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/simulation/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+title = "Darin Djapri"
+weight = 1
+languageName = "English"
+
+[params]
+description = "Embodied AI & Robot Learning -- projects, research, and writing."
+
+[params.author]
+name = "Darin Djapri"
+image = "img/author.jpg"
+headline = "Embodied AI & Robot Learning"
+bio = "I make robots do the menial work."
+
+links = [
+  { envelope = "mailto:ddjapri@ucsd.edu" },
+  { github = "https://github.com/DarinAnthony" },
+  { linkedin = "https://www.linkedin.com/in/darin-djapri-a91143214/" },
+  { "google-scholar" = "https://scholar.google.com/citations?user=TXG-2c4AAAAJ&hl=en&oi=ao" },
+  { cv = "https://drive.google.com/file/d/1Sr6xuuRgD0jI2_n9tfEtpeq_lGmKMhcE/view?usp=sharing" }
+]

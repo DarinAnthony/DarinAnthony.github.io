@@ -1,0 +1,98 @@
+html, body {
+  background: #f7f8fb;
+  color: #111827;
+  transition: background-color 400ms ease, color 400ms ease;
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article.text-center > header {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article.text-center > section.prose {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article.text-center > section.prose .grid {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+html.dark, html.dark body {
+  background: #0b1220;
+  color: #e5e7eb;
+  transition: background-color 400ms ease, color 400ms ease;
+}
+
+.prose a {
+  color: #111827;
+  transition: color 400ms ease;
+}
+
+html.dark .prose a {
+  color: #e5e7eb;
+  transition: color 400ms ease;
+}
+
+.prose, .article, .card, .menu, nav {
+  color: #111827;
+  transition: color 400ms ease, background-color 400ms ease;
+}
+
+html.dark .prose,
+html.dark .article,
+html.dark .card,
+html.dark .menu,
+html.dark nav {
+  color: #e5e7eb;
+  transition: color 400ms ease, background-color 400ms ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #0f172a;
+  transition: color 400ms ease;
+}
+
+html.dark h1,
+html.dark h2,
+html.dark h3,
+html.dark h4,
+html.dark h5,
+html.dark h6 {
+  color: #f1f5f9;
+  transition: color 400ms ease;
+}
+
+nav a, .menu a {
+  padding: 0.35rem 0.6rem;
+  border-radius: 0.75rem;
+}
+
+.article, .card, .prose .card {
+  border-radius: 14px;
+}
+
+body:not(.has-scrolled) .fixed.inset-x-0.bg-neutral {
+  background: transparent;
+  border-bottom-color: transparent;
+  box-shadow: none;
+}
+
+body.has-scrolled .fixed.inset-x-0.bg-neutral {
+  background: #e9edf5;
+  border-bottom: 1px solid #e2e8f0;
+  transition: background-color 400ms ease, border-color 400ms ease;
+}
+
+html.dark body.has-scrolled .fixed.inset-x-0.bg-neutral {
+  background: #0f172a;
+  border-bottom: 1px solid #1f2937;
+  transition: background-color 400ms ease, border-color 400ms ease;
+}

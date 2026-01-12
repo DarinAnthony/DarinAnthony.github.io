@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Robotics on Darin Djapri</title>
+    <link>http://localhost:1313/tags/robotics/</link>
+    <description>Recent content in Robotics on Darin Djapri</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2026 Darin Djapri</copyright>
+    <lastBuildDate>Sun, 11 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/robotics/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ARCTOS Robot Arm</title>
+      <link>http://localhost:1313/projects/arctos-robot-arm/</link>
+      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/arctos-robot-arm/</guid>
+      <description>Build notes and control stack for the ARCTOS arm.</description>
+      
+    </item>
+    
+    <item>
+      <title>F1/10 Autonomous Vehicle</title>
+      <link>http://localhost:1313/projects/f1-10-autonomous-vehicle/</link>
+      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/f1-10-autonomous-vehicle/</guid>
+      <description>Autonomy stack experiments on the F1/10 platform.</description>
+      
+    </item>
+    
+    <item>
+      <title>Hexapod &#43; RL</title>
+      <link>http://localhost:1313/projects/hexapod-rl/</link>
+      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/hexapod-rl/</guid>
+      <description>Reinforcement learning pipeline for hexapod locomotion.</description>
+      
+    </item>
+    
+  </channel>
+</rss>
