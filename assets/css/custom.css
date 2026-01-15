@@ -25,6 +25,16 @@ article.text-center > section.prose .grid {
   margin-right: auto;
 }
 
+.at-a-glance-grid {
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .at-a-glance-grid {
+    gap: 1.5rem;
+  }
+}
+
 html.dark, html.dark body {
   background: #0b1220;
   color: #e5e7eb;

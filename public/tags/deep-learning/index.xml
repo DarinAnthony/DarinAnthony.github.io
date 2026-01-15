@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Deep Learning on Darin Djapri</title>
-    <link>http://localhost:1313/tags/deep-learning/</link>
+    <link>https://YOUR_DOMAIN_HERE/tags/deep-learning/</link>
     <description>Recent content in Deep Learning on Darin Djapri</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2026 Darin Djapri</copyright>
-    <lastBuildDate>Sun, 11 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Jan 2026 00:11:36 -0800</lastBuildDate><atom:link href="https://YOUR_DOMAIN_HERE/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>DQNs from Scratch</title>
-      <link>http://localhost:1313/writing/dqns-from-scratch/</link>
+      <link>https://YOUR_DOMAIN_HERE/writing/dqns-from-scratch/</link>
       <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/writing/dqns-from-scratch/</guid>
+      <guid>https://YOUR_DOMAIN_HERE/writing/dqns-from-scratch/</guid>
       <description>Notes and implementation walkthroughs for DQNs.</description>
       
     </item>

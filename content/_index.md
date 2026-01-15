@@ -14,16 +14,10 @@ If you are interested in collaborating or want to chat, feel free to reach out v
 
 <h2 class="text-center">At a Glance</h2>
 
-<div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-left">
-  <div>
-    {{< article link="/research/" showSummary=true compactSummary=true >}}
-  </div>
-  <div>
-    {{< article link="/projects/" showSummary=true compactSummary=true >}}
-  </div>
-  <div>
-    {{< article link="/writing/" showSummary=true compactSummary=true >}}
-  </div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 text-left at-a-glance-grid">
+  {{< section-card section="research" >}}
+  {{< section-card section="projects" >}}
+  {{< section-card section="writing" >}}
 </div>
 
 ---
