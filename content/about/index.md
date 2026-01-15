@@ -1,20 +1,11 @@
 ---
 title: "About"
+showPagination: false
+showDate: false
 ---
 
-## What I work on
+The bulk of my current research work is in discovering intelligence in robots, of which I am utilizing reinforcement learning, and continuing to explore supervised approaches such as that from the current trend of VLA's.
 
-I build learning systems for dexterous manipulation and humanoid control, especially where morphology matters and deployment constraints are real.
+I do believe that there is a strong case for combining both approaches to achieve more generalizable and robust intelligence in embodied agents, whether through simulation or online learning methods.
 
-## How I like to work
-
-- Own the stack end-to-end (sim -> learning -> eval -> deployment)
-- Build reproducible training pipelines and measurable ablations
-- Keep notes and checklists so future experiments run faster
-
-## Interests
-
-- Morphology-conditioned control
-- Sim-to-real and robustness
-- Online learning / adaptation
-- Systems for large-scale RL training
+Outside of research, I am actively involved as a leader in Triton Droids, where my goal is to build up opportunities for undergrads to get hands-on experience in embodied AI. You can check out the progress we have made here: https://www.tritondroids.com/

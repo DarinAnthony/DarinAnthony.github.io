@@ -16,6 +16,7 @@ cardViewScreenWidth = false
 [article]
 showReadingTime = true
 showDate = true
+showDateUpdated = true
 showTaxonomies = true
 
 [header]

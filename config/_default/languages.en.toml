@@ -8,7 +8,6 @@ description = "Embodied AI & Robot Learning -- projects, research, and writing."
 [params.author]
 name = "Darin Djapri"
 image = "img/author.jpg"
-headline = "Embodied AI & Robot Learning"
 bio = "I make robots do the menial work."
 
 links = [

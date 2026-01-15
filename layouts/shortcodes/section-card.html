@@ -1,0 +1,43 @@
+{{- $section := .Get "section" -}}
+{{- $link := .Get "link" | default (printf "/%s/" $section) -}}
+{{- $page := .Site.GetPage "section" $section -}}
+{{- $title := .Get "title" -}}
+{{- if not $title -}}
+  {{- if $page -}}
+    {{- $title = $page.Title -}}
+  {{- else -}}
+    {{- $title = $section | title -}}
+  {{- end -}}
+{{- end -}}
+{{- $summary := .Get "summary" -}}
+{{- if not $summary -}}
+  {{- if $page -}}
+    {{- $summary = $page.Params.summary | default ($page.Summary | plainify) -}}
+  {{- end -}}
+{{- end -}}
+{{- $count := len (where .Site.RegularPages "Section" $section) -}}
+{{- $postLabel := "posts" -}}
+{{- if eq $count 1 -}}
+  {{- $postLabel = "post" -}}
+{{- end -}}
+
+<article class="h-full rounded-xl border border-neutral-200/80 dark:border-neutral-700/70 bg-white/80 dark:bg-neutral-900/40 shadow-sm transition-shadow hover:shadow-md">
+  <a class="group flex h-full flex-col justify-between p-5 text-left" href="{{ $link }}">
+    <div>
+      <div class="flex items-baseline justify-between gap-3">
+        <h3 class="text-lg font-semibold text-neutral-800 dark:text-neutral-100 group-hover:text-primary-600">
+          {{- $title -}}
+        </h3>
+        <span class="text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
+          {{- $count }} {{ $postLabel -}}
+        </span>
+      </div>
+      {{- with $summary -}}
+        <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-400">{{ . | plainify }}</p>
+      {{- end -}}
+    </div>
+    <div class="mt-4 text-sm font-medium text-primary-600 dark:text-primary-400">
+      View {{ $title | lower }} <span class="ms-2">&rarr;</span>
+    </div>
+  </a>
+</article>
