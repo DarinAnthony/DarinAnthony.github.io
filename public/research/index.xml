@@ -2,32 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Research on Darin Djapri</title>
-    <link>https://YOUR_DOMAIN_HERE/research/</link>
+    <link>http://localhost:1313/research/</link>
     <description>Recent content in Research on Darin Djapri</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2026 Darin Djapri</copyright>
-    <atom:link href="https://YOUR_DOMAIN_HERE/research/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Bayesian Active Learning for the TGLF-NN</title>
-      <link>https://YOUR_DOMAIN_HERE/research/bayesian-active-learning-tglf-nn/</link>
-      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://YOUR_DOMAIN_HERE/research/bayesian-active-learning-tglf-nn/</guid>
-      <description>Active learning loop for data-efficient training on TGLF-NN.</description>
-      
-    </item>
-    
-    <item>
-      <title>Cross-Embodied Co-Design for Dexterous Hands</title>
-      <link>https://YOUR_DOMAIN_HERE/research/cross-embodied-codesign/</link>
-      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://YOUR_DOMAIN_HERE/research/cross-embodied-codesign/</guid>
-      <description>A co-design pipeline that searches hand morphologies and trains morphology-aware policies.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://YOUR_DOMAIN_HERE/research/cross-embodied-codesign/feature.jpg" />
-    </item>
+    <atom:link href="http://localhost:1313/research/index.xml" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>

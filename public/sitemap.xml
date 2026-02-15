@@ -3,59 +3,30 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://YOUR_DOMAIN_HERE/projects/arctos-robot-arm/</loc>
+    <loc>http://localhost:1313/about/</loc>
+    <lastmod>2026-01-15T10:30:50-08:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/contact/</loc>
+    <lastmod>2026-01-15T10:30:50-08:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-01-15T10:30:50-08:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/projects/humanoid-locomotion-from-scratch/</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/projects/</loc>
     <lastmod>2026-01-12T00:11:36-08:00</lastmod>
   </url>
   <url>
-    <loc>https://YOUR_DOMAIN_HERE/research/bayesian-active-learning-tglf-nn/</loc>
+    <loc>http://localhost:1313/research/</loc>
     <lastmod>2026-01-12T00:11:36-08:00</lastmod>
   </url>
   <url>
-    <loc>https://YOUR_DOMAIN_HERE/research/cross-embodied-codesign/</loc>
-    <lastmod>2026-01-11T00:00:00+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://YOUR_DOMAIN_HERE/writing/dqns-from-scratch/</loc>
-    <lastmod>2026-01-12T00:11:36-08:00</lastmod>
-  </url>
-  <url>
-    <loc>https://YOUR_DOMAIN_HERE/projects/even-better-f1-10-autonomous-vehicle/</loc>
-    <lastmod>2026-01-12T00:11:36-08:00</lastmod>
-  </url>
-  <url>
-    <loc>https://YOUR_DOMAIN_HERE/projects/f1-10-autonomous-vehicle/</loc>
-    <lastmod>2026-01-12T00:11:36-08:00</lastmod>
-  </url>
-  <url>
-    <loc>https://YOUR_DOMAIN_HERE/projects/hexapod-rl/</loc>
-    <lastmod>2026-01-12T00:11:36-08:00</lastmod>
-  </url>
-  <url>
-    <loc>https://YOUR_DOMAIN_HERE/projects/video-to-sim-project/</loc>
-    <lastmod>2026-01-12T00:11:36-08:00</lastmod>
-  </url>
-  <url>
-    <loc>https://YOUR_DOMAIN_HERE/about/</loc>
-    <lastmod>2026-01-12T00:11:36-08:00</lastmod>
-  </url>
-  <url>
-    <loc>https://YOUR_DOMAIN_HERE/contact/</loc>
-    <lastmod>2026-01-12T00:11:36-08:00</lastmod>
-  </url>
-  <url>
-    <loc>https://YOUR_DOMAIN_HERE/</loc>
-    <lastmod>2026-01-12T00:11:36-08:00</lastmod>
-  </url>
-  <url>
-    <loc>https://YOUR_DOMAIN_HERE/projects/</loc>
-    <lastmod>2026-01-12T00:11:36-08:00</lastmod>
-  </url>
-  <url>
-    <loc>https://YOUR_DOMAIN_HERE/research/</loc>
-    <lastmod>2026-01-12T00:11:36-08:00</lastmod>
-  </url>
-  <url>
-    <loc>https://YOUR_DOMAIN_HERE/writing/</loc>
+    <loc>http://localhost:1313/writing/</loc>
     <lastmod>2026-01-12T00:11:36-08:00</lastmod>
   </url>
 </urlset>

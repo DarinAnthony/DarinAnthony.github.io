@@ -2,60 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Darin Djapri</title>
-    <link>https://YOUR_DOMAIN_HERE/projects/</link>
+    <link>http://localhost:1313/projects/</link>
     <description>Recent content in Projects on Darin Djapri</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2026 Darin Djapri</copyright>
-    <atom:link href="https://YOUR_DOMAIN_HERE/projects/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>ARCTOS Robot Arm</title>
-      <link>https://YOUR_DOMAIN_HERE/projects/arctos-robot-arm/</link>
-      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+      <title>Humanoid Locomotion from Scratch</title>
+      <link>http://localhost:1313/projects/humanoid-locomotion-from-scratch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://YOUR_DOMAIN_HERE/projects/arctos-robot-arm/</guid>
-      <description>Build notes and control stack for the ARCTOS arm.</description>
-      
-    </item>
-    
-    <item>
-      <title>Even Better F1/10 Autonomous Vehicle</title>
-      <link>https://YOUR_DOMAIN_HERE/projects/even-better-f1-10-autonomous-vehicle/</link>
-      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://YOUR_DOMAIN_HERE/projects/even-better-f1-10-autonomous-vehicle/</guid>
-      <description>Iteration on the F1/10 stack with improved planning and control.</description>
-      
-    </item>
-    
-    <item>
-      <title>F1/10 Autonomous Vehicle</title>
-      <link>https://YOUR_DOMAIN_HERE/projects/f1-10-autonomous-vehicle/</link>
-      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://YOUR_DOMAIN_HERE/projects/f1-10-autonomous-vehicle/</guid>
-      <description>Autonomy stack experiments on the F1/10 platform.</description>
-      
-    </item>
-    
-    <item>
-      <title>Hexapod &#43; RL</title>
-      <link>https://YOUR_DOMAIN_HERE/projects/hexapod-rl/</link>
-      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://YOUR_DOMAIN_HERE/projects/hexapod-rl/</guid>
-      <description>Reinforcement learning pipeline for hexapod locomotion.</description>
-      
-    </item>
-    
-    <item>
-      <title>Video to Sim Project</title>
-      <link>https://YOUR_DOMAIN_HERE/projects/video-to-sim-project/</link>
-      <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
-      
-      <guid>https://YOUR_DOMAIN_HERE/projects/video-to-sim-project/</guid>
-      <description>Pipeline for reconstructing sim-ready scenes from video.</description>
+      <guid>http://localhost:1313/projects/humanoid-locomotion-from-scratch/</guid>
+      <description>Developing locomotion policies from first principles for humanoid robots.</description>
       
     </item>
     
