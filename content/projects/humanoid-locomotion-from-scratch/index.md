@@ -1,10 +1,11 @@
 ---
 title: "Humanoid Locomotion from Scratch"
 summary: "Developing locomotion policies from first principles for humanoid robots."
+date: 2026-02-16
 ---
 
 <div style="text-align: center; margin-bottom: 1.5rem;">
-  <img src="/img/Workday-Highlights/RealRobot-Highlights/Humanoid/its_standing.jpg" alt="Humanoid standing" style="width: 100%; max-width: 560px; height: auto; display: block; margin: 0 auto;" />
+  <img src="/img/Workday-Highlights/RealRobot-Highlights/Humanoid/its_standing.png" alt="Humanoid standing" style="width: 100%; max-width: 560px; height: auto; display: block; margin: 0 auto;" />
   <p style="margin-top: 0.5rem;">The mechanical one.</p>
 </div>
 

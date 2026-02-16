@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Darin Djapri</title>
-    <link>http://localhost:1313/projects/</link>
+    <link>https://YOUR_DOMAIN_HERE/projects/</link>
     <description>Recent content in Projects on Darin Djapri</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2026 Darin Djapri</copyright>
-    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://YOUR_DOMAIN_HERE/projects/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Humanoid Locomotion from Scratch</title>
-      <link>http://localhost:1313/projects/humanoid-locomotion-from-scratch/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <link>https://YOUR_DOMAIN_HERE/projects/humanoid-locomotion-from-scratch/</link>
+      <pubDate>Mon, 16 Feb 2026 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/projects/humanoid-locomotion-from-scratch/</guid>
+      <guid>https://YOUR_DOMAIN_HERE/projects/humanoid-locomotion-from-scratch/</guid>
       <description>Developing locomotion policies from first principles for humanoid robots.</description>
       
     </item>

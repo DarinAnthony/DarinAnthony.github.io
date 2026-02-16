@@ -3,30 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://YOUR_DOMAIN_HERE/projects/humanoid-locomotion-from-scratch/</loc>
+    <lastmod>2026-02-15T23:32:04-08:00</lastmod>
+  </url>
+  <url>
+    <loc>https://YOUR_DOMAIN_HERE/about/</loc>
     <lastmod>2026-01-15T10:30:50-08:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/contact/</loc>
+    <loc>https://YOUR_DOMAIN_HERE/contact/</loc>
     <lastmod>2026-01-15T10:30:50-08:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://YOUR_DOMAIN_HERE/</loc>
     <lastmod>2026-01-15T10:30:50-08:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/projects/humanoid-locomotion-from-scratch/</loc>
-  </url>
-  <url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>https://YOUR_DOMAIN_HERE/projects/</loc>
     <lastmod>2026-01-12T00:11:36-08:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/research/</loc>
-    <lastmod>2026-01-12T00:11:36-08:00</lastmod>
+    <loc>https://YOUR_DOMAIN_HERE/research/</loc>
+    <lastmod>2026-02-15T12:11:46-08:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/writing/</loc>
-    <lastmod>2026-01-12T00:11:36-08:00</lastmod>
+    <loc>https://YOUR_DOMAIN_HERE/writing/</loc>
+    <lastmod>2026-02-15T12:11:46-08:00</lastmod>
   </url>
 </urlset>
