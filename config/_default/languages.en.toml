@@ -8,7 +8,7 @@ description = "Embodied AI & Robot Learning -- projects, research, and writing."
 [params.author]
 name = "Darin Djapri"
 image = "img/author.jpg"
-bio = "I make robots do the menial work."
+bio = "Getting robots to do the menial work."
 
 links = [
   { envelope = "mailto:ddjapri@ucsd.edu" },
