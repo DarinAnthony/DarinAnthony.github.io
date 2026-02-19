@@ -31,3 +31,19 @@ date: 2026-02-16
 </div>
 
 Work in progress.
+
+<div style="text-align: center; margin-top: 1.5rem; margin-bottom: 1.5rem;">
+  <video controls muted playsinline preload="metadata" style="width: 100%; max-width: 560px; display: block; margin: 0 auto;">
+    <source src="/img/Workday-Highlights/Software-Highlights/humanoid_locomotion_sim/good_locomotion.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <p style="margin-top: 0.5rem;">RL in IsaacLab</p>
+</div>
+
+<div style="text-align: center; margin-bottom: 1.5rem;">
+  <video controls muted playsinline preload="metadata" style="width: 100%; max-width: 560px; display: block; margin: 0 auto;">
+    <source src="/img/Workday-Highlights/Software-Highlights/humanoid_locomotion_sim/multi_parallel_locomotion.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <p style="margin-top: 0.5rem;">Parallelized</p>
+</div>
