@@ -1,0 +1,13 @@
+{{ define "main" }}
+<p class="crumb"><a href="/">← {{ .Site.Title }}</a></p>
+<h1>{{ .Title }}</h1>
+<div class="bio">{{ .Content }}</div>
+<ul class="posts">
+  {{ range .Pages.ByDate.Reverse }}
+  <li>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a> <span class="when">({{ .Date.Format "Jan 2006" }})</span>
+    {{ with .Params.summary }}<br><span class="sum">{{ . }}</span>{{ end }}
+  </li>
+  {{ end }}
+</ul>
+{{ end }}

@@ -1,0 +1,99 @@
+{{ define "main" }}
+<header class="hero">
+  <div class="hero-text">
+    <h1>{{ .Site.Title }}</h1>
+    {{ with .Params.tagline }}<p class="tagline">{{ . }}</p>{{ end }}
+    <div class="bio">{{ .Content }}</div>
+    {{ with .Params.links }}
+    <p class="links">
+      {{- range $i, $l := . }}{{ if $i }} <span class="sep">|</span> {{ end }}<a href="{{ $l.url }}"{{ if hasPrefix $l.url "http" }} target="_blank" rel="noopener"{{ end }}>{{ $l.name }}</a>{{ end -}}
+    </p>
+    {{ end }}
+  </div>
+  {{ with .Params.photo }}
+    {{ with resources.Get . }}
+      {{ $img := .Fill "440x440 q85" }}
+      <img class="portrait" src="{{ $img.RelPermalink }}" width="220" height="220" alt="{{ $.Site.Params.author }}">
+    {{ end }}
+  {{ end }}
+</header>
+
+{{ with .Params.news }}
+<section>
+  <h2>News</h2>
+  <ul class="news">
+    {{ range . }}<li><span class="when">{{ (time.AsTime .date).Format "Jan 2006" }}</span><span>{{ .text | markdownify }}</span></li>{{ end }}
+  </ul>
+</section>
+{{ end }}
+
+{{ with .Params.publications }}
+<section>
+  <h2>Publications</h2>
+  <div class="pubs">
+    {{ range . }}
+      {{ $pub := . }}
+      {{ $href := "" }}{{ with $pub.links }}{{ $href = (index . 0).url }}{{ end }}
+      <article class="pub">
+        <a class="pub-thumb" href="{{ $href }}" target="_blank" rel="noopener" aria-label="{{ $pub.title }}">
+          {{ with $pub.video }}
+            <video autoplay muted loop playsinline preload="metadata"{{ with $pub.thumb }}{{ with resources.Get . }} poster="{{ (.Fill "480x360 q82").RelPermalink }}"{{ end }}{{ end }}>
+              <source src="{{ . | relURL }}" type="video/mp4">
+            </video>
+          {{ else }}
+            {{ with $pub.thumb }}
+              {{ with resources.Get . }}
+                {{ if eq .MediaType.SubType "gif" }}
+                  <img src="{{ .RelPermalink }}" width="240" height="180" loading="lazy" alt="">
+                {{ else }}
+                  {{ $t := .Fill "480x360 q82" }}
+                  <img src="{{ $t.RelPermalink }}" width="240" height="180" loading="lazy" alt="">
+                {{ end }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        </a>
+        <div class="pub-body">
+          <a class="pub-title" href="{{ $href }}" target="_blank" rel="noopener">{{ $pub.title }}</a>
+          <p class="pub-authors">{{ $pub.authors | replaceRE `Darin(?: Anthony)? Djapri` "<strong>$0</strong>" | safeHTML }}</p>
+          <p class="pub-venue">{{ $pub.venue | markdownify }}</p>
+          {{ with $pub.links }}
+          <p class="pub-links">
+            {{- range $i, $l := . }}{{ if $i }} <span class="sep">·</span> {{ end }}<a href="{{ $l.url }}" target="_blank" rel="noopener">{{ $l.name }}</a>{{ end -}}
+          </p>
+          {{ end }}
+        </div>
+      </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ with (where .Site.RegularPages "Section" "blog") }}
+<section>
+  <h2>Blog posts</h2>
+  <ul class="posts">
+    {{ range .ByDate.Reverse }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a> <span class="when">({{ .Date.Format "Jan 2006" }})</span></li>{{ end }}
+  </ul>
+  <p class="more"><a href="/blog/">All posts →</a></p>
+</section>
+{{ end }}
+
+{{ with .Params.photos }}
+<section>
+  <h2>Robots I've worked on</h2>
+  <div class="strip">
+    {{ range . }}
+      {{ $p := . }}
+      {{ with resources.Get $p.src }}
+        {{ $t := .Fill "600x450 q80" }}
+        <figure>
+          <img src="{{ $t.RelPermalink }}" width="300" height="225" loading="lazy" alt="{{ $p.caption }}">
+          <figcaption>{{ $p.caption }}</figcaption>
+        </figure>
+      {{ end }}
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+{{ end }}

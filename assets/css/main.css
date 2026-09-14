@@ -1,0 +1,172 @@
+/* Registered so the sky gradient eases between the script's per-second updates instead of stepping. */
+@property --sky-top { syntax: "<color>"; inherits: true; initial-value: #ffffff; }
+@property --sky-bottom { syntax: "<color>"; inherits: true; initial-value: #ffffff; }
+@property --bg { syntax: "<color>"; inherits: true; initial-value: #ffffff; }
+html { transition: --sky-top 1s linear, --sky-bottom 1s linear, --bg 1s linear; }
+
+:root {
+  --bg: #ffffff;
+  --fg: #1c1c1c;
+  --muted: #6b6b6b;
+  --accent: #c2410c;
+  --accent-hover: #9a3412;
+  --rule: #e6e6e6;
+  --card: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.14);
+  --sky-top: var(--bg);
+  --sky-bottom: var(--bg);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121212;
+    --fg: #e8e6e3;
+    --muted: #9a9a9a;
+    --accent: #fb923c;
+    --accent-hover: #fdba74;
+    --rule: #2a2a2a;
+    --card: #1c1c1c;
+    --shadow: rgba(0, 0, 0, 0.5);
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  transition: color 800ms ease, background-color 800ms ease;
+}
+/* The sky: a fixed gradient behind everything, recoloured through the day by the script in <head>. */
+body::before {
+  content: "";
+  position: fixed; inset: 0; z-index: -1;
+  background: linear-gradient(180deg, var(--sky-top) 0%, var(--sky-bottom) 100%);
+}
+a, .pub-thumb, .portrait, .strip img, .foot { transition: color 800ms ease, border-color 800ms ease, box-shadow 800ms ease; }
+::selection { background: var(--accent); color: var(--bg); }
+
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+main.wrap { padding-top: 56px; }
+
+h1, h2, h3 {
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+h1 { font-size: 2.4rem; margin: 0 0 0.25rem; }
+h2 { font-size: 1.55rem; margin: 2.6rem 0 0.7rem; }
+p { margin: 0 0 1rem; }
+
+a { color: var(--accent); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: var(--accent-hover); text-decoration-thickness: 2px; }
+
+/* ---- Hero ---- */
+.hero { display: flex; gap: 40px; align-items: flex-start; justify-content: space-between; }
+.hero-text { flex: 1 1 auto; min-width: 0; }
+.tagline {
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--muted);
+  margin: 0 0 1.1rem;
+}
+.bio p { margin-bottom: 0.9rem; }
+.links { margin-top: 0.4rem; }
+.links .sep { color: var(--muted); }
+
+.portrait {
+  flex: 0 0 auto;
+  width: 220px; height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid var(--card);
+  box-shadow: 0 8px 22px var(--shadow);
+  transition: transform 220ms ease;
+}
+.portrait:hover { transform: scale(1.03); }
+
+/* ---- Lists ---- */
+ul.news { list-style: none; padding: 0; margin: 0; }
+ul.news li { display: flex; gap: 16px; margin: 0.35rem 0; align-items: baseline; }
+ul.news .when { flex: 0 0 5.4em; color: var(--muted); font-variant-numeric: tabular-nums; font-size: 0.95rem; }
+ul.posts { padding-left: 1.2rem; margin: 0; }
+ul.posts li { margin: 0.35rem 0; }
+ul.posts li a { font-size: 1.05rem; }
+.when, .sum, .meta, .crumb { color: var(--muted); }
+.sum { font-size: 0.95rem; }
+.more { margin-top: 0.7rem; font-size: 0.95rem; }
+.crumb { font-size: 0.95rem; margin-bottom: 1.6rem; }
+.crumb a { color: var(--muted); text-decoration: none; }
+.crumb a:hover { color: var(--accent); }
+
+/* ---- Photo strip ---- */
+.strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 22px 20px;
+  padding: 10px 4px 6px;
+}
+.strip figure {
+  margin: 0;
+  transition: transform 200ms ease;
+}
+.strip figure:nth-child(odd) { transform: rotate(-1.4deg); }
+.strip figure:nth-child(even) { transform: rotate(1.4deg); }
+.strip figure:hover { transform: rotate(0deg) translateY(-3px); }
+.strip img {
+  display: block; width: 100%; height: auto; aspect-ratio: 4 / 3;
+  object-fit: cover; border-radius: 8px;
+  border: 4px solid var(--card);
+  box-shadow: 0 6px 16px var(--shadow);
+}
+.strip figcaption { font-size: 0.85rem; color: var(--muted); margin-top: 0.45rem; padding: 0 4px; }
+
+/* ---- Publications ---- */
+.pubs { display: flex; flex-direction: column; gap: 1.5rem; margin-top: 0.4rem; }
+.pub { display: flex; gap: 20px; align-items: flex-start; }
+.pub-thumb {
+  flex: 0 0 176px; display: block;
+  border-radius: 8px; overflow: hidden;
+  border: 1px solid var(--rule);
+  box-shadow: 0 3px 10px var(--shadow);
+  background: var(--rule);
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+.pub-thumb:hover { transform: translateY(-2px); box-shadow: 0 8px 18px var(--shadow); }
+.pub-thumb img, .pub-thumb video { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+.pub-body { flex: 1 1 auto; min-width: 0; }
+.pub-body p { margin: 0.15rem 0 0; }
+.pub-title { font-weight: 600; font-size: 1.05rem; text-decoration: none; line-height: 1.35; }
+.pub-title:hover { text-decoration: underline; }
+.pub-authors { font-size: 0.95rem; }
+.pub-venue { font-size: 0.95rem; color: var(--muted); font-style: italic; }
+.pub-links { font-size: 0.9rem; margin-top: 0.3rem !important; }
+.pub-links .sep { color: var(--muted); }
+
+/* ---- Post ---- */
+.post h1 { font-size: 2rem; }
+.post .meta { margin-top: 0; margin-bottom: 1.8rem; font-size: 0.95rem; }
+.post img, .post video { max-width: 100%; height: auto; border-radius: 8px; }
+.post h2 { font-size: 1.4rem; }
+.post code { font-size: 0.92em; background: var(--rule); padding: 0.1em 0.35em; border-radius: 4px; }
+.post pre { overflow-x: auto; padding: 1rem; background: var(--rule); border-radius: 8px; }
+.post pre code { background: none; padding: 0; }
+.post blockquote { margin: 1rem 0; padding-left: 1rem; border-left: 3px solid var(--accent); color: var(--muted); }
+
+/* ---- Footer ---- */
+.foot { margin-top: 4rem; padding-top: 1.2rem; padding-bottom: 2.5rem; border-top: 1px solid var(--rule); font-size: 0.9rem; color: var(--muted); }
+.foot a { color: var(--muted); }
+.foot a:hover { color: var(--accent); }
+
+/* ---- Mobile ---- */
+@media (max-width: 640px) {
+  main.wrap { padding-top: 36px; }
+  .hero { flex-direction: column-reverse; gap: 22px; }
+  .portrait { width: 160px; height: 160px; }
+  .pub { flex-direction: column; gap: 12px; }
+  .pub-thumb { flex-basis: auto; width: 100%; max-width: 320px; }
+  h1 { font-size: 2rem; }
+}

@@ -1,0 +1,12 @@
+baseURL = "https://DarinDjapri.github.io/"
+languageCode = "en"
+title = "Darin Djapri"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term"]
+
+[params]
+author = "Darin Djapri"
+description = "Darin Djapri — continual and adaptive robot learning for dexterous manipulation and generalist policies. MS student at Stanford University."
+
+[markup.goldmark.renderer]
+unsafe = true

@@ -1,3 +1,13 @@
+# Hugo build output and caches (CI builds from source)
+public/
+resources/_gen/
+.hugo_build.lock
+
+# macOS
+.DS_Store
+
+# Local tooling
+.claude/
 
 # Large videos
 *.MOV
