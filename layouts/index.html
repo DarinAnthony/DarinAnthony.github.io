@@ -69,15 +69,17 @@
 </section>
 {{ end }}
 
-{{ with (where .Site.RegularPages "Section" "blog") }}
+{{/* Blog posts: hidden on the homepage until there is more to show. Remove this comment wrapper to bring it back.
+{ { with (where .Site.RegularPages "Section" "blog") } }
 <section>
   <h2>Blog posts</h2>
   <ul class="posts">
-    {{ range .ByDate.Reverse }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a> <span class="when">({{ .Date.Format "Jan 2006" }})</span></li>{{ end }}
+    { { range .ByDate.Reverse } }<li><a href="{ { .RelPermalink } }">{ { .Title } }</a> <span class="when">({ { .Date.Format "Jan 2006" } })</span></li>{ { end } }
   </ul>
   <p class="more"><a href="/blog/">All posts →</a></p>
 </section>
-{{ end }}
+{ { end } }
+*/}}
 
 {{ with .Params.photos }}
 <section>

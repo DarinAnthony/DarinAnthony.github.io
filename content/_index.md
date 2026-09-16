@@ -21,7 +21,7 @@ publications:
     authors: "Kehlani Fay, Darin Djapri, Anya Zorin, James Clinton, Ali El Lahib, Hao Su, Michael T. Tolley, Sha Yi, Xiaolong Wang"
     venue: "ICLR 2026"
     thumb: "img/pubs/house-of-dextra.jpg"
-    # video: "video/house-of-dextra.mp4"   # optional: drop an mp4 in static/video/ and uncomment for a looping clip
+    video: "video/house-of-dextra.mp4"   # looping clip (muted); thumb above is its poster frame
     links:
       - { name: "paper", url: "https://openreview.net/pdf?id=k8ovuXEQQu" }
       - { name: "arXiv", url: "https://arxiv.org/abs/2512.03743" }
