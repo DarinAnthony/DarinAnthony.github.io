@@ -84,7 +84,7 @@
     {{ block "main" . }}{{ end }}
   </main>
   <footer class="wrap foot">
-    <p>© {{ now.Year }} {{ .Site.Params.author }} · Built with <a href="https://gohugo.io/">Hugo</a> · No trackers, just robots.</p>
+    <p>© {{ now.Year }} {{ .Site.Params.author }}{{/* hidden for now; restore by moving this back into the line above: · Built with <a href="https://gohugo.io/">Hugo</a> · No trackers, just robots. */}}</p>
   </footer>
 </body>
 </html>
