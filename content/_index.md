@@ -6,7 +6,7 @@ links:
   - name: Email
     url: "mailto:ddjapri@ucsd.edu"
   - name: CV
-    url: "https://drive.google.com/file/d/1Sr6xuuRgD0jI2_n9tfEtpeq_lGmKMhcE/view?usp=sharing"
+    url: "https://drive.google.com/file/d/1-TNe83kg0wkMNwiJ5D3p4tPGWDAF5kFB/view?usp=sharing"
   - name: GitHub
     url: "https://github.com/DarinAnthony"
   - name: LinkedIn
