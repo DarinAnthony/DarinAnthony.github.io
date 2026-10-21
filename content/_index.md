@@ -1,7 +1,7 @@
 ---
 title: "Darin Djapri"
 tagline: "Getting robots to do the menial work."
-photo: "img/author.jpg"
+photo: "img/author-stanford.jpg"
 links:
   - name: Email
     url: "mailto:ddjapri@ucsd.edu"
@@ -42,8 +42,13 @@ photos:
     caption: "Pupper"
   - src: "img/site/so101-teleop.jpg"
     caption: "SO-101 teleop rig"
+  - video: "video/robosub.mp4"
+    src: "img/site/robosub.jpg"
+    caption: "RoboSub, the underwater one"
 ---
 
-Hello! I'm an MS student in Computer Science at **Stanford University**. Previously I did my undergrad at **UC San Diego** (Computer Science, Math minor), working at the [Hao Su lab](https://cseweb.ucsd.edu/~haosu/) and the [Bio-Inspired Robotics lab](https://tolley.eng.ucsd.edu/).
+Hello! I'm an MSCS student at **Stanford University**, where I'm a member of the [IRIS Lab](https://irislab.stanford.edu/) advised by [Prof. Chelsea Finn](https://ai.stanford.edu/~cbfinn/). I did my undergrad at **UC San Diego** (Computer Science, Math minor).
 
-My broad research interests lie in robot learning, but specifically I am exploring **continual and adaptive robot learning** for **dexterous manipulation** and **generalist policies**: how robots can keep improving control, perception, and semantic understanding from ongoing experience without forgetting, how architecture shapes that adaptation, and how policies can be fast, safe, and recoverable by design. Before Stanford, I led [Triton Droids](https://triton-droids.vercel.app/) at UC San Diego.
+My broad research interests lie in robot learning, but specifically I am exploring **continual and adaptive robot learning** for **dexterous manipulation** and **generalist policies**: how robots can keep improving control, perception, and semantic understanding from ongoing experience without forgetting, how architecture shapes that adaptation, and how policies can be fast, safe, and recoverable by design.
+
+Previously, I worked in the [Hao Su lab](https://cseweb.ucsd.edu/~haosu/) and the [Bio-Inspired Robotics lab](https://tolley.eng.ucsd.edu/) at UC San Diego and led [Triton Droids](https://triton-droids.vercel.app/). I have also interned at [Avea Robotics](https://avearobotics.com/).

@@ -83,16 +83,25 @@
 
 {{ with .Params.photos }}
 <section>
-  <h2>Robots I've worked on</h2>
+  <h2>Some robots I've worked with</h2>
   <div class="strip">
     {{ range . }}
       {{ $p := . }}
-      {{ with resources.Get $p.src }}
-        {{ $t := .Fill "600x450 q80" }}
+      {{ if $p.video }}
         <figure>
-          <img src="{{ $t.RelPermalink }}" width="300" height="225" loading="lazy" alt="{{ $p.caption }}">
+          <video autoplay muted loop playsinline preload="metadata" width="300" height="225"{{ with $p.src }}{{ with resources.Get . }} poster="{{ (.Fill "600x450 q80").RelPermalink }}"{{ end }}{{ end }} aria-label="{{ $p.caption }}">
+            <source src="{{ $p.video | relURL }}" type="video/mp4">
+          </video>
           <figcaption>{{ $p.caption }}</figcaption>
         </figure>
+      {{ else }}
+        {{ with resources.Get $p.src }}
+          {{ $t := .Fill "600x450 q80" }}
+          <figure>
+            <img src="{{ $t.RelPermalink }}" width="300" height="225" loading="lazy" alt="{{ $p.caption }}">
+            <figcaption>{{ $p.caption }}</figcaption>
+          </figure>
+        {{ end }}
       {{ end }}
     {{ end }}
   </div>

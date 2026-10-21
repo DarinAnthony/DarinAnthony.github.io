@@ -116,7 +116,7 @@ ul.posts li a { font-size: 1.05rem; }
 .strip figure:nth-child(odd) { transform: rotate(-1.4deg); }
 .strip figure:nth-child(even) { transform: rotate(1.4deg); }
 .strip figure:hover { transform: rotate(0deg) translateY(-3px); }
-.strip img {
+.strip img, .strip video {
   display: block; width: 100%; height: auto; aspect-ratio: 4 / 3;
   object-fit: cover; border-radius: 8px;
   border: 4px solid var(--card);
