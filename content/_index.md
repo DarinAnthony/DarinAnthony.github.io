@@ -1,6 +1,5 @@
 ---
 title: "Darin Djapri"
-tagline: "Getting robots to do the menial work."
 photo: "img/author-stanford.jpg"
 links:
   - name: Email
@@ -35,19 +34,19 @@ publications:
       - { name: "paper", url: "https://dex-manipulation.github.io/rss2026/pdfs/25_Catch_It_All_Generalizable_.pdf" }
 photos:
   - src: "img/site/humanoid-sitting.jpg"
-    caption: "The humanoid, sitting n' chilling"
+    caption: "Tritonoid"
   - src: "img/site/arctos-arm.jpg"
-    caption: "ARCTOS arm, assembled"
+    caption: "ARCTOS arm"
   - src: "img/site/pupper.jpg"
-    caption: "Pupper"
-  - src: "img/site/so101-teleop.jpg"
-    caption: "SO-101 teleop rig"
+    caption: "Robo Pupper"
   - video: "video/robosub.mp4"
     src: "img/site/robosub.jpg"
-    caption: "RoboSub, the underwater one"
+    caption: "The Robo Sub"
+  - src: "img/site/so101-teleop.jpg"
+    caption: "Classic SO101's"
 ---
 
-Hello! I'm an MSCS student at **Stanford University**, where I'm a member of the [IRIS Lab](https://irislab.stanford.edu/) advised by [Prof. Chelsea Finn](https://ai.stanford.edu/~cbfinn/). I did my undergrad at **UC San Diego** (Computer Science, Math minor).
+I'm an MSCS student at **Stanford University**, where I'm a member of the [IRIS Lab](https://irislab.stanford.edu/) advised by [Prof. Chelsea Finn](https://ai.stanford.edu/~cbfinn/). I did my undergrad at **UC San Diego** (Computer Science, Math minor).
 
 My broad research interests lie in robot learning, but specifically I am exploring **continual and adaptive robot learning** for **dexterous manipulation** and **generalist policies**: how robots can keep improving control, perception, and semantic understanding from ongoing experience without forgetting, how architecture shapes that adaptation, and how policies can be fast, safe, and recoverable by design.
 
